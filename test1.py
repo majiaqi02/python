@@ -1,3 +1,26 @@
+// ==UserScript==
+// @name         大麦抢票
+// @namespace    CTGU-GGBond
+// @version      15.7.4
+// @description  全自动抢票，自动提交订单
+// @author       CTGU-GGBond
+// @match        https://buy.damai.cn/*
+// @match        https://detail.damai.cn/*
+// @match        https://seatsvc.damai.cn/*
+// @match        https://m.damai.cn/*
+// @match        https://mclient.alipay.com/*
+// @match        <https://mtop.damai.cn/h5/mtop.alibaba.detail.subpage.getdetail/*>
+// @grant        GM_xmlhttpRequest
+// @connect      api.m.taobao.com
+// @require      https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js
+// @license      wxywxy
+// ==/UserScript==
+ 
+// https://seatsvc.damai.cn/tms/selectSeat?itemId=624499596673&hasPromotion=true&performId=210252620&skuId=4427321477193&projectId=624499596673&spm=a2oeg.project.projectinfo.dbuy
+// https://seatsvc.damai.cn/tms/selectSeat?itemId=624499596673&performId=210252601&skuId=4427321477292&projectId=624499596673
+ 
+
+
 if (curr_url.includes("https://m.damai.cn/damai/")) {
     var phone_order_url = sessionStorage.getItem("phone_order_url");
     if (phone_order_url) {
